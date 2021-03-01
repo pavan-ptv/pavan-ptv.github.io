@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #020f14;
+    line-height: 1.6;
+    font-family: 'B612',sans-serif;
+    color: #bd7418;
+}
+
+.page-wrapper {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* find-me */
+.find-me {
+    align-self: center;
+}
+
+.find-me a img {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Form tag */
+.greet {
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: -50px;
+    color: antiquewhite;
+}
+
+.input-name {
+    margin-bottom: -2px;
+}
+.form-tag {
+    align-self: center;
+}
+
+.form-tag form {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+}
+
+.form-tag form label input
+{
+    width: 100%;
+    height: 35px;
+    background-color: #020f14;
+    border: none;
+    border-bottom: 2px solid antiquewhite;
+    color: #fff;
+}
+.form-tag form label input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #677189;
+    color: #020f14;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-tag form label input::placeholder,
+.form-tag form textarea::placeholder
+{
+    color: #fff;
+    padding-left: 10px;
+}
+
+.form-tag form textarea
+{
+    background-color: #020f14;
+}

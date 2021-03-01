@@ -1,0 +1,348 @@
+/* 
+COLOR PALATTE USED:
+#020a0f
+#020f14
+#202d40
+#677189
+#bd7418
+#e2e2e2*/
+
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #020a0f;
+    font-family: 'B612',sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+/* .nav-and-main */
+.page-wrapper {
+    width: 100%;
+}
+.nav-and-main{
+    width: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+.logo-name {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-name header {
+    color: antiquewhite;
+    padding-top: 30px;
+    font-size: larger;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.navbar {
+    height: 70px;
+
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container ul li {
+    padding:24px 10px 0 10px;
+}
+
+.navbar a{
+    padding: 10px;
+    margin: 0 5px;
+    color: #bd7418;
+    transition: all 0.4s ease-in;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: goldenrod;
+    bottom: 0%;left: 50%;
+    transition: all 500ms ease;
+}
+
+.navbar a:hover::after {
+    left: 0%;
+    width: 100%;
+}
+
+/* main */
+.nav-and-main {
+    height: 900px;
+}
+
+/* properties */
+.flex {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+/* Main section */
+    /* Logo */
+#logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: hello 0.5s ease forwards 3s;
+    z-index: 0;
+}
+
+#logo path:nth-child(2){
+    stroke-dasharray: 224px;
+    stroke-dashoffset: 224px;
+    animation: text-anim 2s ease forwards 0.2s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 294px;
+    stroke-dashoffset: 294px;
+    animation: text-anim 2s ease forwards 0.4s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 299px;
+    stroke-dashoffset: 299px;
+    animation: text-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 210px;
+    stroke-dashoffset: 210px;
+    animation: text-anim 2s ease forwards 0.8s;
+
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 240px;
+    stroke-dashoffset: 240px;
+    animation: text-anim 2s ease forwards 1.0s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 350px;
+    stroke-dashoffset: 350px;
+    animation: text-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 240px;
+    stroke-dashoffset: 240px;
+    animation: text-anim 2s ease forwards 1.4s;
+}
+#logo path:nth-child(9){
+    stroke-dasharray: 410px;
+    stroke-dashoffset: 410px;
+    animation: text-anim 2s ease forwards 1.6s;
+}
+#logo path:nth-child(10){
+    stroke-dasharray: 350px;
+    stroke-dashoffset: 350px;
+    animation: text-anim 2s ease forwards 1.8s;
+}
+#logo path:nth-child(11){
+    stroke-dasharray: 360px;
+    stroke-dashoffset: 360px;
+    animation: text-anim 2s ease forwards 2.0s;
+}
+#logo path:nth-child(12){
+    stroke-dasharray: 520px;
+    stroke-dashoffset: 520px;
+    animation: text-anim 2s ease forwards 2.2s;
+}
+#logo path:nth-child(13){
+    stroke-dasharray: 240px;
+    stroke-dashoffset: 240px;
+    animation: text-anim 2s ease forwards 2.4s;
+}
+#logo path:nth-child(14){
+    stroke-dasharray: 280px;
+    stroke-dashoffset: 280px;
+    animation: text-anim 2s ease forwards 2.6s;
+}
+
+@keyframes text-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#author-name .underline-container {
+    width: 900px;
+    position: relative;
+}
+#author-name .underline-container .under-line {
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    background-color: #fff;
+    margin-top: 90px;
+    margin-left: 300px;
+    animation: under-border 4s ease-in-out forwards 3s;
+}
+
+@keyframes under-border {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* greet and about */
+
+.greet{
+    width: 600px;
+    height: 250px;
+    position: relative;
+}
+
+.greet .message {
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    /* background-color: #020a0f; */
+    opacity: 0;
+    color: antiquewhite;
+    animation: moves ease forwards 6s;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.greet .message h2 {
+    font-size: 35px;
+}
+
+.about .message {
+    width: 300px;
+    height: 250px;
+    /* background-color: #020a0f; */
+    margin: 95px 0 0 900px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-wrap: wrap;
+    color: antiquewhite;
+    animation: moves1 ease forwards 6s;
+}
+.about {
+    width: 100%;
+}
+
+.about .message p {
+    font-size: 30px;
+}
+
+@keyframes moves {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+@keyframes moves1 {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-20%);
+        opacity: 1;
+    }
+}
+
+/* projects section */
+
+.projects-section {
+    height: 500px;
+    width: 100%;
+    background-color: #abb5a0;
+    position: relative;
+}
+
+.projects-section #projects {
+    width: 1100px;
+    height: 100%;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.projects-section #projects .todo {
+    width: 100%;
+    height: 25%;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+    .page-wrapper {
+        width: 500px;
+    }
+    .navbar {
+        height: 130px;
+    }
+    #logo {
+        width: 400px;
+        margin-top: 40px;
+    }
+    .greet {
+        width: 200px;
+    }
+    .greet .message {
+        width: 100px;
+    }
+    .about .message {
+        width: 100px;
+    }
+    .about {
+        transform: translateX(-120%);
+    }
+    #author-name .underline-container {
+        width: 400px;
+    }
+    #author-name .underline-container .under-line {
+        margin-left: 70px;
+        margin-top: 100px;
+
+    }
+}
