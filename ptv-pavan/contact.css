@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     font-family: 'B612',sans-serif;
     color: #bd7418;
+    scroll-behavior: smooth;
 }
 
 .page-wrapper {
@@ -84,6 +85,10 @@ body {
     color: 020a0f;
     font-size: 20px;
     cursor: pointer;
+}
+
+.form-tag form label input[type="submit"]:hover {
+    transform: translateX(2px) rotateX(3turn);
 }
 
 .form-tag form label input::placeholder,
