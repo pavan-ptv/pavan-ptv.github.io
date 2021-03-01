@@ -29,16 +29,24 @@ body {
 .find-me a img {
     width: 50px;
     height: 50px;
-    background-color: #fff;
-    border-radius: 2px;
 }
 
+.find-me .social-media a{
+    padding: 10px;
+}
+#twitter_link {
+    width: 60px;
+    height: 60px;
+}
 /* Form tag */
 .greet {
     font-size: 50px;
     margin-left: 20px;
     margin-top: -50px;
     color: antiquewhite;
+}
+.input-name::after {
+    content: "*";
 }
 
 .input-name {
@@ -62,13 +70,18 @@ body {
     border: none;
     border-bottom: 2px solid antiquewhite;
     color: #fff;
+    font-family: 'B612',sans-serif;
+}
+
+.form-tag form label input:focus{
+    outline: none;
 }
 .form-tag form label input[type="submit"] {
     width: 100px;
     height: 40px;
     border-radius: 10px;
-    background-color: #677189;
-    color: #020f14;
+    background-color: #bd7410;
+    color: 020a0f;
     font-size: 20px;
     cursor: pointer;
 }
@@ -83,4 +96,5 @@ body {
 .form-tag form textarea
 {
     background-color: #020f14;
+    color: #fff;
 }
