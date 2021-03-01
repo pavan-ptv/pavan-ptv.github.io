@@ -80,8 +80,8 @@ body {
 .form-tag form label input[type="submit"] {
     width: 100px;
     height: 40px;
-    border-radius: 10px;
-    background-color: #bd7410;
+    /* border-radius: 10px; */
+    background-color: transparent;
     color: 020a0f;
     font-size: 20px;
     cursor: pointer;
@@ -89,6 +89,9 @@ body {
 
 .form-tag form label input[type="submit"]:hover {
     transform: translateX(2px) rotateX(3turn);
+    border-radius: 5px;
+    background-color: #bd7418;
+    transition: all 0.2s ease-in;
 }
 
 .form-tag form label input::placeholder,

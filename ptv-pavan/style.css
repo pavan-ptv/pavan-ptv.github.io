@@ -5,7 +5,8 @@ COLOR PALATTE USED:
 #202d40
 #677189
 #bd7418
-#e2e2e2*/
+#e2e2e2
+#abb5a0*/
 
 @import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
 
@@ -297,8 +298,9 @@ a {
 .projects-section {
     height: 500px;
     width: 100%;
-    background-color: #abb5a0;
+    background-color: #020f14;
     position: relative;
+    color: #c1e7e3;
 }
 
 .projects-section #projects {
@@ -308,11 +310,10 @@ a {
     margin: 0 auto;
 }
 
-.projects-section #projects .todo {
-    width: 100%;
-    height: 25%;
+.projects-section #projects {
+    font-size: 50px;
+    text-align: center;
 }
-
 /* Media queries */
 @media (max-width: 600px) {
     .page-wrapper {
@@ -345,4 +346,56 @@ a {
         margin-top: 100px;
 
     }
+}
+
+/* about-me */
+.about {
+    background: linear-gradient(#c1e7e3,#dabfde);
+    overflow: hidden;
+
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #020f14;
+}
+
+.about .qualities {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .qualities .q1 {
+    flex: 200px;
+}
+
+.author-and-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.author-and-skills .skills h2 {
+    text-align: center;
+    font-size: 25px;
+}
+.author-and-skills .skills h3 {
+    font-size: 20px;
+}
+.author-and-skills .skills progress {
+    width: 80%;
+    height: 30px;
+}
+
+.author-and-skills .pavan-kumar {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    align-self: center;
+}
+
+/* attributions */
+.attributions {
+    background-color: #bd7418;
 }
