@@ -262,6 +262,7 @@ a {
 .about {
     background: linear-gradient(#c1e7e3,#dabfde);
     position: relative;
+    width: 100%;
 }
 
 .about h1 {
