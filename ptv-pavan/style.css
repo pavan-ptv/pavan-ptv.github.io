@@ -306,3 +306,21 @@ a {
 .attributions {
     background-color: #bd7418;
 }
+
+@media (max-width:400px) {
+    .page-wrapper {
+        width: 400px;
+    }
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-wrapper {
+        width: 600px;
+    }
+    .container {
+        max-width: 600px;
+    }
+}
