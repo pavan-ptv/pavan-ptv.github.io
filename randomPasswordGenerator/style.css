@@ -76,12 +76,13 @@ body {
 #result {
     color: #e6e6e6;
     font-size: 20px;
+    word-wrap: break-word;
 }
 
 @media screen and (max-width:400px){
     
     .main {
         width: 300px;
-        left: 10%;
+        left: 6%;
     }
 }
