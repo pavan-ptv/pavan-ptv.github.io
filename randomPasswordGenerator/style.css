@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #05001f;
+    font-family: 'Farro',sans-serif;    
+    height: 100vh;
+}
+
+
+.main {
+    width: 400px;
+    height: 400px;
+    background-color: #5c2094;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+    left: 35%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px black;
+}
+.main > h2 {
+    position: relative;
+    color: #e6e6e6;
+    font-size: 30px;
+    top: -1rem;
+}
+
+.passwordDisplay{
+    display: flex;
+    background: hsl(246, 73%, 17%);
+    padding: 1.5rem;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.passwordDisplay .btn{
+    font-size: 30px;
+    position: absolute;
+    top: 0.5rem;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 10px;
+    position: relative;
+}
+.setting input[type="checkbox"] {
+    width: 15px;
+    height: 20px;
+}
+
+.generate-button {
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 20px;
+    background: hsl(246, 73%, 17%);
+    color: #e6e6e6;
+}
+
+#result {
+    color: #e6e6e6;
+    font-size: 20px;
+}
+
