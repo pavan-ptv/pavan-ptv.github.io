@@ -3,8 +3,8 @@ const DOB = document.getElementById("BirthDate");
 
 function generateDay() {
     const Dob = DOB.value;
-    const date = parseInt(Dob.slice(0,3));
-    const month = parseInt(Dob.slice(3,6));
+    const date = parseInt(Dob.slice(0,2));
+    const month = parseInt(Dob.slice(3,5));
     const year = parseInt(Dob.slice(6));
     const lastTwoDigitsofYear = parseInt(Dob.slice(8));
 //     console.log(Dob);
