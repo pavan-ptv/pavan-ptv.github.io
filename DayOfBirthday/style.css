@@ -25,7 +25,8 @@ h1 {
     position: absolute;
     top: 16rem;
     left: 23rem;
-    font-size: 23px;
+    font-size: 30px;
+    font-weight: 700;
     
 }
 .inputElements {
@@ -64,7 +65,7 @@ button {
     }
     .main-section #result-container {
         top: 31rem;
-        font-size: medium;
+        font-size: 25px;
         left: 0;
     }
 }

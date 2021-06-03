@@ -7,10 +7,7 @@ function generateDay() {
     const month = parseInt(Dob.slice(5,7));
     const date = parseInt(Dob.slice(8));
     const lastTwoDigitsofYear = parseInt(Dob.slice(2,4));
-    const h2 = document.createElement("h2");
-    const result = document.createTextNode("Yay!! you were born on " + getDay(date,month,year,lastTwoDigitsofYear));
-    h2.appendChild(result);
-    document.getElementById("result-container").appendChild(h2);
+    document.getElementById("result-container").innerHTML = "Yay!! you were born on " + getDay(date,month,year,lastTwoDigitsofYear);
 }
 
 
