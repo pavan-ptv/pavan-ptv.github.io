@@ -3,9 +3,9 @@ const DOB = document.getElementById("BirthDate");
 
 function generateDay() {
     const Dob = DOB.value;
-    const year = parseInt(Dob.slice(0,4));
-    const month = parseInt(Dob.slice(5,7));
-    const date = parseInt(Dob.slice(8));
+    const date = parseInt(Dob.slice(0,3));
+    const month = parseInt(Dob.slice(4,6));
+    const year = parseInt(Dob.slice(8));
     const lastTwoDigitsofYear = parseInt(Dob.slice(2,4));
     document.getElementById("result-container").innerHTML = "Yay!! you were born on " + getDay(date,month,year,lastTwoDigitsofYear);
 }
