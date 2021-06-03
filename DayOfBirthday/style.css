@@ -55,14 +55,15 @@ button {
 
 @media screen and (max-width: 400px) {
     .main-section {
-        width: 50%;
+        width: 250px;
+        height: 100vh;
     }
     .inputElements button {
-        top: 30rem;
+        top: 28rem;
         left: 3.5rem;
     }
     .main-section #result-container {
-        top: 33rem;
+        top: 31rem;
         font-size: medium;
         left: 0;
     }
