@@ -4,9 +4,10 @@ const DOB = document.getElementById("BirthDate");
 function generateDay() {
     const Dob = DOB.value;
     const date = parseInt(Dob.slice(0,3));
-    const month = parseInt(Dob.slice(4,6));
-    const year = parseInt(Dob.slice(8));
-    const lastTwoDigitsofYear = parseInt(Dob.slice(2,4));
+    const month = parseInt(Dob.slice(3,6));
+    const year = parseInt(Dob.slice(6));
+    const lastTwoDigitsofYear = parseInt(Dob.slice(8));
+//     console.log(Dob);
     document.getElementById("result-container").innerHTML = "Yay!! you were born on " + getDay(date,month,year,lastTwoDigitsofYear);
 }
 
@@ -94,8 +95,8 @@ function getMonthCode(month)
 function getDay(date,month,year,lastTwoDigitsofYear) {
     const yearCode = getYearCode(year);
     const monthCode = getMonthCode(month);
-    // console.log("Date: "+ date + " Month: "+month+ " MonthCode: "+monthCode+ " yearCode: "+yearCode);
     const quotientBy4 = parseInt(lastTwoDigitsofYear / 4);
+    console.log("Date: "+ date + " Month: "+month+ " MonthCode: "+monthCode+ " yearCode: "+yearCode + "hi" +lastTwoDigitsofYear+quotientBy4);
     const totalDays = date + monthCode + yearCode + lastTwoDigitsofYear + quotientBy4;
     const weekDay = totalDays % 7;
     switch(weekDay)
