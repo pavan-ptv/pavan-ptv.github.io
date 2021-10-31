@@ -1,0 +1,218 @@
+/* Color Palette:
+    #f7f0f5
+    #d8973c
+    #348aa7
+    #313638
+    #c75000
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Basic Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #313638;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Nav Bar Design */
+nav {
+    background-color: #d8973c;
+    height: 100px;
+}
+nav .contents {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 2em;
+    align-items: center;
+}
+
+nav .contents h2 {
+    color: #313638;
+    border-bottom: 1px solid #f7f0f5;
+}
+
+nav .contents .FootersAndLinks ul{
+    display: flex;
+    text-align: center;
+}
+
+nav .contents .FootersAndLinks ul #home{
+    border-bottom: 3px solid #348AA7;
+}
+nav .contents .FootersAndLinks ul li {
+    padding-right: 5em; 
+}
+nav .contents .FootersAndLinks ul li a{
+    color: #313638;
+    font-weight: 600;
+}
+nav .contents .FootersAndLinks ul li a:hover{
+    border-bottom: 3px solid #348AA7;
+}
+
+nav .contents .getQuote input[type='button'],
+.main .textContent input[type='button']{
+    background: #348AA7;
+    font-size: 20px;
+    border-radius: 25px;
+    color: #f7f0f5;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Main Section Design */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main h1{
+    margin-bottom: 0.6em;
+}
+.main p {
+    margin-bottom: 2em;
+}
+.main .textContent {
+    color: #f7f0f5;
+    font-size: 25px;
+    width: 40%;
+    margin-top: 3em;
+}
+.main .imageContent img{
+    width: 411px;
+    height: 400px;
+    margin-top: 3em;
+    border-radius: 25px;
+}
+
+.footerArrow i{
+    color: #f7f0f5;
+    font-size: 70px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+}
+
+.socialLinks {
+    position: absolute;
+    left: 350px;
+    top: 600px;
+}
+.socialLinks a {
+    color: #f7f0f5;
+    font-size: 25px;
+    padding: 7px;
+}
+.socialLinks a:hover {
+    font-size: 27px;
+}
+
+/* Projects Section */
+.projects {
+    width: 100%;
+    height: 100vh;
+    background-color: #313638;
+    position: relative;
+    top: 100px;
+}
+.projects h2 {
+    text-align: center;
+    color: #f7f0f5;
+    font-size: 35px;
+    margin-bottom: 1em;
+}
+/* Components */
+.project-card{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.project-card img{
+    width: 600px;
+    height: 400px;
+}
+
+.project-card .project-content {
+    background-color: #348AA7;
+    width: 750px;
+}
+
+.project-card .project-content h3 {
+    color: #f7f0f5;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.project-card .project-content p {
+    color: #f7f0f5;
+    font-size: 20px;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.project-card .project-content input[type='button']
+{
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+    margin-left: 1em;
+    background: #d8973c;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #313638;
+    font-weight: 700;
+}
+
+.logo {
+    height: 100px;
+    background: #c75000;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.logo svg {
+    position: absolute;
+    left: 50%;
+}
+.logo ul{
+    display: flex;
+    margin-top: 2em;
+}
+.logo ul li a {
+    color: #f7f0f5;
+    padding: 10px;
+}
+.logo ul li a:hover{
+    border-bottom: 2px solid #313638;
+}
+.logo .bottom-links a{
+    position: relative;
+    top: 1em;
+    color: #f7f0f5;
+    font-size: 25px;
+    padding: 7px;
+}
+
+.logo .bottom-links a:hover {
+    font-size: 27px;
+}
