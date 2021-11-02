@@ -87,7 +87,7 @@ nav .logo {
         height: 92vh;
         top: 9vh;
         width: 100%;
-        background-color: #313638;
+        background-color: rgba(0,0,0,0.7);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -95,10 +95,11 @@ nav .logo {
         transform: translateX(100%);
     }
     .navigation-links li {
-        padding: 5px 0 5px 0;
+        padding: 10px 0 10px 0;
     }
     .navigation-links li a {
         color: #d8973c;
+        font-size: 20px;
     }
     .burger {
         display: block;
