@@ -99,6 +99,19 @@ nav .logo {
 }
 
 /* Projects Section */
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.project-wrapper h2 {
+    text-align: center;
+    color: #f7f0f5;
+}
+
+.project-card img{
+    width: 390px;
+    height: 226px;
+}
 /* Media Queries */
 @media screen and (max-width: 1024px) {
     .navigation-links {
@@ -132,6 +145,10 @@ nav .logo {
     .burger {
         display: block;
         cursor: pointer;
+    }
+
+    .project-content {
+        display: none;
     }
 
 }
