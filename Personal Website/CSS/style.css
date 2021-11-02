@@ -43,6 +43,10 @@ nav .logo {
     letter-spacing: 2px;
 }
 
+.logo p {
+    color: #f7f0f5;
+}
+
 .navigation-links li a{
     color: #313638;
     font-size: 14px;
@@ -63,7 +67,7 @@ nav .logo {
 
 .burger div{
     height: 3px;
-    width: 25px;
+    width: 30px;
     background-color: #313638;
     margin: 5px;
 }
@@ -71,7 +75,31 @@ nav .logo {
 .burger {
     display: none;
 }
+/* Hero Section */
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+}
+.hero-text-section {
+    padding: 35px 2px 35px 2px;
+    color: #f7f0f5;
+}
+.hero-text-section h1 {
+    font-weight: normal;
+    padding: 10px;
+}
+.hero-text-section p {
+    font-weight: normal;
+    padding: 10px;
+}
+.hero-wrapper .hero-image-section img{
+    height: 550px;
+    width: 500px;
+}
 
+/* Projects Section */
+/* Media Queries */
 @media screen and (max-width: 1024px) {
     .navigation-links {
         width: 60%;
@@ -105,6 +133,7 @@ nav .logo {
         display: block;
         cursor: pointer;
     }
+
 }
 
 .nav-active {
