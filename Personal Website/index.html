@@ -7,111 +7,100 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>P T V Pavan Kumar || Web Developer</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>P T V Pavan Kumar</title>
 </head>
 <body>
-    <nav id="navigation">
-        <div class="contents">
-            <h2>P T V Pavan Kumar</h2>
-            <div class="FootersAndLinks">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h2>P T V Pavan Kumar</h2>
+                <p>Web Developer</p>
+            </div>
+            <ul class="navigation-links">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="hero-wrapper">
+            <div class="hero-text-section">
+                <h1 class="hero-text">
+                    A Web developer who can make your business look great and sound.
+                </h1>
+                <p class="sub-info">
+                    A Student Developer and Programmer
+                </p>
+                <a href="contact.html"><input type="button" value="Contact"></a>
+                <div class="socialLinks">
+                    <a href="https://www.facebook.com/perakam.pavankumar.9" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/KumarPtv" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/perakam-tarun-venkata-pavan-kumar-a808a9193/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/pavanptv" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-section">
+                <img src="Images/ptv3.jpg" alt="PTV Pavan Kumar">
+            </div>
+            <!-- <div class="footerArrow">
+                <a href="#projects"><i class="fas fa-angle-down"></i></a>
+            </div> -->
+        </div>
+        <div class="project-wrapper">
+            <h2><u>Projects</u></h2>
+            <div class="project1 project-card">
+                <img src="Images/project1.png" alt="project1">
+                <div class="project-content">
+                    <h3>Random Password Generator</h3>
+                    <p>
+                        A concept of design where the user has the right to choose what characters must be included in the password, and according to the length of the password selected, the user will be provided with a password which can then be copied into clipboard.
+                    </p>
+                    <p>
+                        Languages : HTML5,CSS3,JAVASCRIPT
+                    </p>
+                    <input type="button" value="Website">
+                </div>
+            </div>
+            <div class="project2 project-card">
+                <div class="project-content">
+                    <h3>Image Analyzer with AWS</h3>
+                    <p>
+                    An end-to-end application using the image analysis functionality of
+                    AWS Rekognition. Rekognition contains lots of ways to
+                    analyze certain parts of the image like <strong>Celebrity Images,Objects etc..,</strong>Here, we tried to
+                        bring some of it's functionalities coupled with Python's backend framework flask
+                        to upload images to AWS.
+                    </p>
+                    <p>
+                        Languages : HTML5,CSS3,JAVASCRIPT,PYTHON(flask and boto3)
+                    </p>
+                    <input type="button" value="Website">
+                </div>
+                <img src="Images/project1.png" alt="">
+            </div>
+        </div>      
+        <div class="footer-wrapper">
+            <div class="nav-content">
                 <ul>
-                    <li><a href="index.html" id="home">Home</a></li>
                     <li><a href="#projects">Work</a></li>
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="getQuote">
-                <input type="button" value="A Quote to Inspire">
-            </div>
-        </div>
-    </nav>
-    <div class="main">
-        <div class="textContent">
-            <h1>
-                A Web developer who can make your business look great and sound.
-            </h1>
-            <p>
-                A Student Developer and Programmer
-            </p>
-            <input type="button" value="Contact">
-        </div>
-        <div class="imageContent">
-            <img src="Images/ptv3.jpg" alt="PTV Pavan Kumar">
-        </div>
-    </div>
-    <div class="socialLinks">
-        <a href="https://www.facebook.com/perakam.pavankumar.9" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/KumarPtv" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/perakam-tarun-venkata-pavan-kumar-a808a9193/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/pavanptv" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-    <div class="footerArrow">
-        <a href="#projects"><i class="fas fa-angle-down"></i></a>
-    </div>
-    <div class="projects" id="projects">
-        <h2>Projects / Work</h2>
-        <div class="project1 project-card">
-            <img src="Images/project1.png" alt="project1">
-            <div class="project-content">
-                <h3>Random Password Generator</h3>
-                <p>
-                    A concept of design where the user has the right to choose what characters must be included in the password, and according to the length of the password selected, the user will be provided with a password which can then be copied into clipboard.
-                </p>
-                <p>
-                    Languages : HTML5,CSS3,JAVASCRIPT
-                </p>
-                <input type="button" value="Website">
-            </div>
-        </div>
-        <div class="project2 project-card">
-            <div class="project-content">
-                <h3>Image Analyzer with AWS</h3>
-                <p>
-                   An end-to-end application using the image analysis functionality of
-                   AWS Rekognition. Rekognition contains comes with lots of ways to
-                   analyze certain parts of the image like <strong>Celebrity Images,Objects etc..,</strong>Here, we tried to
-                    bring some of it's functionalities coupled with Python's backend framework flask
-                    to upload images to AWS.
-                </p>
-                <p>
-                    Languages : HTML5,CSS3,JAVASCRIPT,PYTHON(flask and boto3)
-                </p>
-                <input type="button" value="Website">
-            </div>
-            <img src="Images/project1.png" alt="">
-        </div>
-        <div class="logo">
-            <ul>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <a href="#navigation"><svg width="70" height="90" viewBox="0 0 131 163" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 86.7947L57.6957 156V61H113" stroke="#FFD700" stroke-width="4"/>
-                <path d="M64.805 16H105.679L113 31.7353L105.679 49.3588H83.717H61.1447H47.7233V123L16 80.8294" stroke="#FFD700" stroke-width="4"/>
-                <path d="M27.5669 33.9985L28.1756 80.5349" stroke="#FFD700" stroke-width="4"/>
-                <path d="M38 33V94L27 79.2316" stroke="#FFD700" stroke-width="4"/>
-                <path d="M65 24H90" stroke="#FFD700" stroke-width="4"/>
-                <path d="M2 33H88V24" stroke="#FFD700" stroke-width="4"/>
-                <path d="M16 16V23" stroke="#FFD700" stroke-width="5"/>
-                <path d="M65 2H33.5H2V35" stroke="#FFD700" stroke-width="4"/>
-                <path d="M9 89L18 83" stroke="#FFD700" stroke-width="5"/>
-                <path d="M65 16L13 16" stroke="#FFD700" stroke-width="4"/>
-                <path d="M65 24H16V23" stroke="#FFD700" stroke-width="4"/>
-                <path d="M63 2H119" stroke="#FFD700" stroke-width="4"/>
-                <path d="M112 61.5C125.77 53.431 127.573 44.0599 128.17 34.8333C129.013 21.8201 124.843 8.42736 117.7 1.66044" stroke="#FFD700" stroke-width="4"/>
-                </svg>
-            </a>
-            <div class="bottom-links">
+            <div class="footer-social-links">
                 <a href="https://www.facebook.com/perakam.pavankumar.9" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://twitter.com/KumarPtv" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/perakam-tarun-venkata-pavan-kumar-a808a9193/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/pavanptv" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-        </div>
+        </div>  
     </div>
     <script src="JAVASCRIPT/main.js"></script>
 </body>
