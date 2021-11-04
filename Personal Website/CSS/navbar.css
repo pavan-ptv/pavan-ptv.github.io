@@ -31,6 +31,10 @@ nav .logo {
     font-weight: bold;
 }
 
+.navigation-links li a:hover {
+    border-bottom: 3px solid #348aa7;
+}
+
 .navigation-links {
     display: flex;
     justify-content: space-around;

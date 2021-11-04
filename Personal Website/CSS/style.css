@@ -54,6 +54,9 @@ nav .logo {
     font-weight: bold;
 }
 
+.navigation-links li a:hover {
+    border-bottom: 3px solid #348aa7;
+}
 #home {
     border-bottom: 2px solid #348aa7;
 }
@@ -198,6 +201,7 @@ nav .logo {
     text-decoration: none;
     transition: color 0.4s ease;
 }
+
 /* Hero Section */
 .hero-wrapper {
     display: flex;
@@ -209,6 +213,9 @@ nav .logo {
 .hero-text-section {
     padding: 35px 2px 35px 2px;
     color: #f7f0f5;
+}
+.hero-text-section span{
+    color: #d8973c;
 }
 .hero-text-section h1 {
     font-weight: normal;
@@ -268,18 +275,19 @@ nav .logo {
     color: #f7f0f5;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 14px;
 }
 
 .resume input[type='button']
 {
     background-color: #348aa7;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px 20px 5px 20px;
     border: none;
     border-radius: 25px;
     color: #f7f0f5;
     margin-bottom: 1em;
-
+    cursor: pointer;
 }
 
 .footer-wrapper {
@@ -294,7 +302,87 @@ nav .logo {
     font-size: 25px;
     padding: 5px 5px 0 7px;
 }
+
 /* Media Queries */
+@media screen and (min-width:1100px) {
+    .hero-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hero-wrapper .hero-text-section {
+        width: 600px;
+    }
+    .hero-text-section h1 {
+        font-weight: 700;
+    }
+    .hero-text-section p {
+        font-size: 20px;
+    }
+    .hero-wrapper .hero-image-section img{
+        width: 550px;
+        height: 600px;
+        margin-top: 2em;
+    }
+    .resume {
+        display: none;
+    }
+    .main-section-resume a input[type='button']
+    {
+        font-size: 23px;
+        border: none;
+        background-color: #348aa7;
+        padding: 0.5em 1em 0.5em 1em;
+        color: #f7f0f5;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    .main-section-resume a input[type='button']:hover {
+        transform: translateY(5%);
+    }
+    /* projects section */
+    .project-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1em;
+    }
+    .project-card img {
+        width: 500px;
+        height: 350px;
+    }
+    .project-card .project-content {
+        width: 800px;
+        background-color: #348aa7;
+    }
+    .project-card .project-content h3 {
+        padding: 0.5em;
+        font-size: 25px;
+        color: #f7f0f5;
+    }
+    .project-card .project-content p {
+        font-size: 20px;
+        padding: 0.5em;
+    }
+    .project-card .project-content input[type='button'] {
+        cursor: pointer;
+        font-size: 23px;
+        background-color: #d8973c;
+        border: none;
+        padding: 0.5em 1em 0.5em 1em;
+        position: relative;
+        left: 1em;
+        border-radius: 25px;
+        color: #313638;
+    }
+    .project-wrapper > p {
+        display: none;
+    }
+    .project-wrapper h2 {
+        font-size: 30px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .navigation-links {
         width: 60%;
@@ -324,14 +412,10 @@ nav .logo {
         font-size: 25px;
         font-weight: bold;
     }
-    .project-wrapper p{
-        font-size: 14px;
+    .footerArrow {
+        display: none;
     }
-    .resume p {
-        font-size: 14px;
-    }
-    .resume input[type='button']
-    {
-        font-size: 18px;
+    .main-section-resume {
+        display: none;
     }
 }
