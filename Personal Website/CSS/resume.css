@@ -174,7 +174,7 @@ html {
         height: 400px;
     }
     .hero-wrapper .text-content{
-        width: 100%;
+        width: 300px;
     }
     .hero-wrapper .text-content h1 {
         font-size: 30px;
@@ -191,7 +191,7 @@ html {
     }
     .resume-info-text .auth-text {
         margin-top: 2em;
-        width: 100%;
+        width: 300px;
     }
     .education-info {
         flex-direction: column;
@@ -205,7 +205,7 @@ html {
         align-items: center;
     }
     .course-info .course-type-info {
-        width: 100%;
+        width: 300px;
     }
     .footer-info {
         flex-direction: column;
