@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #313638;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.6;
+}
+
+ul,ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero-section */
+.hero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-wrapper .text-content {
+    width: 600px;
+    color: #f7f0f5;
+}
+.hero-wrapper .text-content span {
+    color: #d8973c;
+}
+.hero-wrapper .text-content h1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+.hero-wrapper img {
+    width: 450px;
+    height: 550px;
+    padding: 1em;
+}
+
+.hero-wrapper .text-content input[type='button']{
+    font-size: 20px;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 25px;
+    background-color: #348aa7;
+    border: none;
+    color: #f7f0f5;
+    cursor: pointer;
+}
+.hero-wrapper .text-content input[type='button']:hover {
+    transform:  translateY(5%);
+}
+
+.social-links a{
+    color: #f7f0f5;
+    font-size: 30px;
+    padding: 1em;
+}
+.social-links {
+    margin-top: 1em;
+}
+
+#FooterArrow{
+    font-size: 50px;
+    color: #f7f0f5;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+/* resume text */
+.resume-info-text {
+    display: flex;
+    color: #f7f0f5;
+    justify-content: space-evenly;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.resume-info-text span {
+    color: #d8973c;
+}
+
+.resume-info-text .auth-text {
+    width: 500px;
+}
+.resume-info-text .auth-text p {
+    padding-bottom: 0.5em;
+}
+
+.resume-info-text * {
+    font-size: 20px;
+}
+
+.education-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    color: #f7f0f5;
+    margin-left: 4em;
+}
+.education-info > p {
+    color: #d8973c;
+    font-size: 22px;
+}
+.education-info p {
+    font-size: 20px;
+}
+.education-info .edu-info {
+    width: 600px;
+}
+.course-info {
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-evenly;
+    color: #f7f0f5;
+}
+.course-info > p {
+    font-size: 22px;
+    color: #d8973c;
+}
+.course-info p {
+    font-size: 20px;
+}
+
+.course-info .course-type-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.course-info .course-type-info .card {
+    padding: 2em;
+    margin-right: 5em;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-evenly;
+    color: #f7f0f5;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.footer-info h2 {
+    color: #d8973c;
+    font-size: 30px;
+}
+
+.footer-info .social span,
+.footer-info .contacts span{
+    font-size: 20px;
+    color: #d8973c;
+}
+
+.footer-info .social p,
+.footer-info .contacts p {
+    font-size: 18px;
+}
+
+@media screen and (max-width:768px){
+    .hero-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-wrapper img {
+        width: 350px;
+        height: 400px;
+    }
+    .hero-wrapper .text-content{
+        width: 100%;
+    }
+    .hero-wrapper .text-content h1 {
+        font-size: 30px;
+    }
+    .social-links a {
+        font-size: 20px;
+    }
+    #FooterArrow {
+        display: none;
+    }
+    .resume-info-text {
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume-info-text .auth-text {
+        margin-top: 2em;
+        width: 100%;
+    }
+    .education-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .education-info .edu-info {
+        width: 350px;
+    }
+    .course-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .course-info .course-type-info {
+        width: 100%;
+    }
+    .footer-info {
+        flex-direction: column;
+    }
+}
