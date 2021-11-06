@@ -209,5 +209,6 @@ html {
     }
     .footer-info {
         flex-direction: column;
+        margin-left: 1em;
     }
 }
