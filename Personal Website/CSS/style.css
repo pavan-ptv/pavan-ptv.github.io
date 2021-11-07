@@ -68,7 +68,7 @@ nav .logo {
     height: 8vh;
     align-items: center;
 }
-
+/* menu for mobile site */
 .menu-wrap {
     position: fixed;
     top: 5px;
@@ -311,7 +311,6 @@ nav .logo {
 /* Media Queries */
 @media screen and (min-width:1100px) {
     .hero-wrapper {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -352,7 +351,6 @@ nav .logo {
     }
     /* projects section */
     .project-card {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding: 1em;
@@ -407,10 +405,10 @@ nav .logo {
 }
 @media screen and (max-width:768px) {
 
-    .navigation-links {
-        display: none;
-    }
-    .project-content {
+    .navigation-links,
+    .project-content,
+    .footerArrow,
+    .main-section-resume {
         display: none;
     }
     .menu-wrap {
@@ -428,11 +426,5 @@ nav .logo {
     .hero-text-section h1 {
         font-size: 25px;
         font-weight: bold;
-    }
-    .footerArrow {
-        display: none;
-    }
-    .main-section-resume {
-        display: none;
     }
 }
