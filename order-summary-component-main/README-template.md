@@ -37,7 +37,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: (https://github.com/pavan-ptv/pavan-ptv.github.io/tree/master/order-summary-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://pavan-ptv.github.io/order-summary-component-main/)
 
 ## My process
 
