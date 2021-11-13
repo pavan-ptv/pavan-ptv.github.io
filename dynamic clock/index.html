@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Dynamic Clock</title>
 </head>
@@ -19,6 +22,10 @@
                 </div>
             </div>
         </div>
+        <div class="dateAndTimeDisplay">
+            <h1 class="time-display"></h1>
+            <p class="date-display-section"></p>
+        </div>
     </div>
     <script>
         const timeDisplay = document.querySelector('.time-display');
@@ -26,6 +33,8 @@
         const minutes = document.querySelector('.minute-hand');
         const hours = document.querySelector('.hour-hand');
         const bodyEle = document.querySelector('body');
+        const dateAndTime = document.querySelector('.date-display-section');
+        const timeDisp = document.querySelector('.time-display');
         function setTime()
         {
             const time = new Date();
@@ -41,6 +50,36 @@
             bodyEle.style.background= `rgb(${hour},${minute},${second})`;
         }
         setInterval(setTime,1000);
+        function displayTimeAndDate() {
+            const timeAndDate = new Date();
+            let hoursNum = timeAndDate.getHours();
+            const minutesNum = timeAndDate.getMinutes();
+            const dayList = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const day = dayList[timeAndDate.getDay()];
+            const dateDisp = timeAndDate.getDate();
+            const monthList = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const month = monthList[timeAndDate.getMonth()];
+            const year = timeAndDate.getFullYear();
+            dateAndTime.innerHTML = dateDisp + " " + month + " "+ year;
+            if(hoursNum >= 0 && hoursNum <= 9)
+            {
+                hoursNum = "0"+String(hoursNum);
+            }
+            else if(hoursNum > 12 && hoursNum < 24)
+            {
+                hoursNum = parseInt(hoursNum) - 12;
+            }
+            if(hoursNum == 24)
+            {
+                hoursNum = "00";
+            }
+            if(minutesNum >= 0 && minutesNum <= 9)
+            {
+                minutesNum = "0"+String(hoursNum);
+            }
+            timeDisp.innerHTML = hoursNum + ":" + minutesNum;
+        }
+        setInterval(displayTimeAndDate,1000);
     </script>
 </body>
 </html>

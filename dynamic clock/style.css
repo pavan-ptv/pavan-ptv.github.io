@@ -16,8 +16,27 @@ body {
     line-height: 1.6;
     min-height: 100vh;
     align-items: center;
+    font-family: 'Poppins',sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: center;
 }
 
+.dateAndTimeDisplay {
+    margin-left: 2em;
+}
+h1,p {
+    color: #fff;
+}
+h1 {
+    font-size: 80px;
+}
+p {
+    font-size: 50px;
+}
 .clock {
     width: 30rem;
     height: 30rem;
@@ -45,15 +64,15 @@ body {
 }
 
 .clock .hour-hand {
-    height: 6px;
+    height: 8px;
 }
 
 .clock .minute-hand{
-    height: 4px;
+    height: 6px;
 }
 
 .clock .second-hand{
-    height: 3px;
+    height: 2px;
 }
 
 
@@ -62,6 +81,21 @@ body {
         width: 20rem;
         height: 20rem;
         border: 10px solid white;
+    }
+    .container {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 25px;
+    }
+    .dateAndTimeDisplay {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        
     }
 }
 
