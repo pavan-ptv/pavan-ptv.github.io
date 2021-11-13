@@ -65,13 +65,9 @@
             {
                 hoursNum = "0"+String(hoursNum);
             }
-            else if(hoursNum > 12 && hoursNum < 24)
+            else if(hoursNum > 12 && hoursNum <= 24)
             {
                 hoursNum = parseInt(hoursNum) - 12;
-            }
-            if(hoursNum == 24)
-            {
-                hoursNum = "00";
             }
             if(minutesNum >= 0 && minutesNum <= 9)
             {
